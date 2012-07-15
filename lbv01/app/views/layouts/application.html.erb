@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Liveboard</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <% if current_user %>
+  <p> Signed in as <%= current_user.fname %> <%=current_user.lname %> <br/>
+  <%= link_to 'MyBoard', myboard_path %>
+  <%= link_to 'Sign Out', 'signout' %>
+  </p>
+<% else %>
+  <p>
+    You are not signed in!
+
+  </p>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
