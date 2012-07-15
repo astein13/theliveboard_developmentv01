@@ -7,6 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<% if current_user %>
+  <p> Signed in as <%= current_user.fname %> <%=current_user.lname %> <br/>
+  <%= link_to 'The Liveboard', liveboard_path %>
+  <%= link_to 'MyBoard', myboard_path %>
+  <%= link_to 'Sign Out', signout_path %>
+  </p>
+<% else %>
+  <p>
+    You are not signed in!
+ <%= link_to 'Click here to sign-in with Facebook.', '../auth/facebook' %>
+
+  </p>
+<% end %>
 
 <%= yield %>
 
