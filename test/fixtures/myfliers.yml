@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  flier_id: MyString
+  user_id: MyString
+  attending_status: MyString
+
+two:
+  flier_id: MyString
+  user_id: MyString
+  attending_status: MyString

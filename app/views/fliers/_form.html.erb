@@ -1,0 +1,17 @@
+<%= form_for(@flier) do |f| %>
+  <% if @flier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@flier.errors.count, "error") %> prohibited this flier from being saved:</h2>
+
+      <ul>
+      <% @flier.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

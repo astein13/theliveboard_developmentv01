@@ -1,0 +1,21 @@
+<h1>Listing fliers</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fliers.each do |flier| %>
+  <tr>
+    <td><%= link_to 'Show', flier %></td>
+    <td><%= link_to 'Edit', edit_flier_path(flier) %></td>
+    <td><%= link_to 'Destroy', flier, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Flier', new_flier_path %>
