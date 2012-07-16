@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-    
+  belongs_to :community, :foreign_key => "community_id"
+  
   def self.from_omniauth(auth)
  
   where(auth.slice(:provider, :fbid)).first_or_initialize.tap do |user|

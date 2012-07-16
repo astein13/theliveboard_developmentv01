@@ -6,9 +6,8 @@ TheliveboardDevelopmentv01::Application.routes.draw do
   get "welcome/index"
 
   resources :fliers
-
   resources :users
-
+  resources :communities
   #matches
     #facebook-related
   match 'auth/:provider/callback', to: 'sessions#create'

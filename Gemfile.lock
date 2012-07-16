@@ -130,6 +130,7 @@ DEPENDENCIES
   jquery-rails
   omniauth-facebook
   rails (= 3.2.3)
+  rake (>= 0.8.7)
   sass-rails (~> 3.2.3)
   sqlite3
   thin

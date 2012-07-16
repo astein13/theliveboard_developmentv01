@@ -11,11 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120715222704) do
+ActiveRecord::Schema.define(:version => 20120716065316) do
+
+  create_table "communities", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "fliers", :force => true do |t|
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
     t.string   "title"
     t.string   "tagline"
     t.text     "description"
@@ -23,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20120715222704) do
     t.datetime "endtime"
     t.string   "imageurl"
     t.text     "freefood"
+    t.integer  "community_id"
   end
 
   create_table "myfliers", :force => true do |t|
@@ -43,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20120715222704) do
     t.string   "imageurl"
     t.string   "oauth_token"
     t.string   "oauth_expires_at"
+    t.integer  "community_id"
   end
 
 end
