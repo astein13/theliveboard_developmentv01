@@ -8,6 +8,7 @@ TheliveboardDevelopmentv01::Application.routes.draw do
   resources :fliers
   resources :users
   resources :communities
+  
   #matches
     #facebook-related
   match 'auth/:provider/callback', to: 'sessions#create'
@@ -17,7 +18,7 @@ TheliveboardDevelopmentv01::Application.routes.draw do
     #general
   match 'myboard', to: 'myboard#index'
   match 'liveboard', to: 'liveboard#index'
-
+  match 'add_flier', to: 'Myfliers#add'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

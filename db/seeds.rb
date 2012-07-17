@@ -5,7 +5,7 @@ Flier.create(:title => 'XY Presents: Tom Jones',
   :starttime => DateTime.parse("2013, 4, 21, 13"),
   :imageurl => '/images/seeds/tomjones.jpg',
   :endtime => DateTime.parse("2013, 4, 21, 17"),
-  :community_id => 1
+  :community_id => '1'
   )
 
 Flier.create(:title => 'Amherst v. Williams Football!',
@@ -15,8 +15,6 @@ Flier.create(:title => 'Amherst v. Williams Football!',
   :starttime => DateTime.parse("2013, 9, 21, 13"),
   :imageurl => '/images/seeds/awf.jpg',
   :endtime => DateTime.parse("2013, 4, 21, 16"),
-  :community_id => 1
+  :community_id => '1'
   )
 
-
-Community.create :community => 'Amherst College'

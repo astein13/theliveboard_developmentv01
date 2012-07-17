@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  
   belongs_to :community, :foreign_key => "community_id"
   
   def self.from_omniauth(auth)
