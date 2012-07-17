@@ -1,5 +1,6 @@
 <h1>MyBoard</h1>
 <p>Fliers that I have added:</p>
-<% @myfliers.each do |myflier| %>
-<%= myflier.id %>
+<% @fliers.each do |flier| %>
+<%= flier.title %><br/>
+<%= button_to 'Remove from MyBoard', delete_flier_path(:flier_id =>flier.id) %>
 <% end %>

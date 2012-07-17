@@ -19,6 +19,8 @@ TheliveboardDevelopmentv01::Application.routes.draw do
   match 'myboard', to: 'myboard#index'
   match 'liveboard', to: 'liveboard#index'
   match 'add_flier', to: 'Myfliers#add'
+  match 'delete_flier', to: 'Myfliers#delete'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

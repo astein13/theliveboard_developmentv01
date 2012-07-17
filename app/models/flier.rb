@@ -2,7 +2,8 @@ class Flier < ActiveRecord::Base
   attr_accessible :id, :title, :description, :endtime, :imageurl, :starttime,
                   :tagline, :community_id
 
-  
+  has_many :users, :through => :myfliers
+  has_many :myfliers
   belongs_to :community, :foreign_key => "community_id"
 
   validates :title, :description, :endtime, :imageurl, :starttime, :tagline, :community_id, :presence => true
