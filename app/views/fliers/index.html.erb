@@ -2,6 +2,16 @@
 
 <table>
   <tr>
+    <th>Title</th>
+    <th>Image url</th>
+    <th>Tagline</th>
+    <th>Description</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Location</th>
+    <th>Free food</th>
+    <th>Creator</th>
+    <th>Community</th>
     <th></th>
     <th></th>
     <th></th>
@@ -9,6 +19,16 @@
 
 <% @fliers.each do |flier| %>
   <tr>
+    <td><%= flier.title %></td>
+    <td><%= flier.image_url %></td>
+    <td><%= flier.tagline %></td>
+    <td><%= flier.description %></td>
+    <td><%= flier.start_time %></td>
+    <td><%= flier.end_time %></td>
+    <td><%= flier.location %></td>
+    <td><%= flier.free_food %></td>
+    <td><%= flier.creator_id %></td>
+    <td><%= flier.community_id %></td>
     <td><%= link_to 'Show', flier %></td>
     <td><%= link_to 'Edit', edit_flier_path(flier) %></td>
     <td><%= link_to 'Destroy', flier, confirm: 'Are you sure?', method: :delete %></td>

@@ -1,11 +1,11 @@
 TheliveboardDevelopmentv01::Application.routes.draw do
+  resources :fliers
+
   get "myboard/index"
 
   get "liveboard/index"
 
   get "welcome/index"
-
-  resources :fliers
   resources :users
   resources :communities
   
@@ -18,9 +18,9 @@ TheliveboardDevelopmentv01::Application.routes.draw do
     #general
   match 'myboard', to: 'myboard#index'
   match 'liveboard', to: 'liveboard#index'
-  match 'add_flier', to: 'Myfliers#add'
-  match 'delete_flier', to: 'Myfliers#delete'
-  
+  match 'myboard_add_flier', to: 'Myfliers#add'
+  match 'myboard_delete_flier', to: 'Myfliers#delete'
+  match 'create_flier', to: 'fliers#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -2,5 +2,5 @@
 
 <% @fliers.each do |flier| %>
 <%= flier.title %><br/>
-<%= button_to 'Add to MyBoard', add_flier_path(:flier_id => flier.id)%>
+<%= button_to 'Add to MyBoard', myboard_add_flier_path(:flier_id => flier.id)%>
 <%end%>
