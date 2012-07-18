@@ -1,6 +1,7 @@
 <h1><%= @community  %> Liveboard</h1>
 
 <% @fliers.each do |flier| %>
-<%= flier.title %><br/>
+<%= image_tag flier.image_url %><br/>
+<%= link_to  flier.title, show_flier_path(:id => flier.id) %><br/>
 <%= button_to 'Add to MyBoard', myboard_add_flier_path(:flier_id => flier.id)%>
 <%end%>

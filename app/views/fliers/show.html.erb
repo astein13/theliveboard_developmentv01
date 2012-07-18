@@ -1,19 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
+<h2>
   <%= @flier.title %>
-</p>
-
-<p>
-  <b>Image url:</b>
-  <%= @flier.image_url %>
-</p>
-
-<p>
-  <b>Tagline:</b>
+</h2>
+<h3>
+  <i>
   <%= @flier.tagline %>
-</p>
+  </i>
+</h3>
+  <%= image_tag @flier.image_url %>
+
+
 
 <p>
   <b>Description:</b>

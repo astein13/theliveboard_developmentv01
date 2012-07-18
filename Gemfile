@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'omniauth-facebook'
 gem 'thin'
 gem 'rake', '>= 0.8.7'
+gem 'carrierwave'
 
 # Gems used only for assets and not required
 # in production environments by default.
