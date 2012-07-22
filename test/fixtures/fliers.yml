@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  image_url: MyString
+  tagline: MyString
+  description: MyText
+  start_time: 2012-07-17 22:47:20
+  end_time: 2012-07-17 22:47:20
+  location: MyString
+  free_food: MyString
+  creator_id: MyString
+  community_id: MyString
+
+two:
+  title: MyString
+  image_url: MyString
+  tagline: MyString
+  description: MyText
+  start_time: 2012-07-17 22:47:20
+  end_time: 2012-07-17 22:47:20
+  location: MyString
+  free_food: MyString
+  creator_id: MyString
+  community_id: MyString

@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+<h2>
+  <%= @flier.title %>
+</h2>
+<h3>
+  <i>
+  <%= @flier.tagline %>
+  </i>
+</h3>
+  <%= image_tag @flier.image_url %>
+
+
+
+<p>
+  <b>Description:</b>
+  <%= @flier.description %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @flier.start_time %>
+</p>
+
+<p>
+  <b>End time:</b>
+  <%= @flier.end_time %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @flier.location %>
+</p>
+
+<p>
+  <b>Free food:</b>
+  <%= @flier.free_food %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @flier.creator_id %>
+</p>
+
+<p>
+  <b>Community:</b>
+  <%= @flier.community_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_flier_path(@flier) %> |
+<%= link_to 'Back', fliers_path %>
